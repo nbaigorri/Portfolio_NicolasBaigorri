@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#hero" class="logo">NB</a>
+        </div>
+        <nav class="navbar">
+            <a class="barra-navegacion active"  href="#portfolio">PORTFOLIO</a>
+            <a class="barra-navegacion" href="#aboutme">SOBRE MÍ</a>
+            <a class="barra-navegacion" href="#video-presentacion">VIDEO PRESENTACION</a>
+
+        </nav>
+        <a class="boton-contacto" href="#formulario">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            CONTACTO</a>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="contenedor-hero-izq">
+            <div class="titulos-hero">
+                <h3>NICOLÁS BAIGORRI</h3>
+                <h1>FOTOGRÁFO</h1>
+            </div>
+
+            <div class="contenedor-hero-final">
+                <div class="redes">
+                    <i class="bi bi-behance"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <div class="hero-final">
+                    <h4>portfolio</h4>
+                    <div class="linea-vertical"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="contenedor-hero-der">
+            <img class="fondo" src="fotos/fondo_1-2.jpg" alt="">
+        </div> -->
+        <div class="contenedor-hero-der">
+            <div class="carrousel">
+                <div class="slider">
+                    <img id="slide-1" src="fotos/hero/carrusel_1.jpg" alt="">
+                    <img id="slide-2" src="fotos/hero/carrusel_2.jpg" alt="">
+                    <img id="slide-3" src="fotos/hero/carrusel_3.jpg" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1" ></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>    
+        </div>
+        
+    </section>
+
+
+
+    <!-- ----------------HABILIDADES---------------- -->
+
+<section class="servicios">
+    <div class="contenedor-servicios">
+        <div class="titulo-servicios">
+            <h3> ¿Qué puedo hacer por vos?</h3>
+        </div>
+            <div class="lista-servicios">
+                <div>
+                    <i class="bi bi-camera"></i>
+                    <h4><b>Sesión de fotos</b></h4>
+                    <p>Fotos vibrantes <br> y de gran calidad</p>
+                </div>
+                <div>
+                    <i class="bi bi-camera-reels"></i>
+                    <h4><b>Edición de vídeos</b></h4>
+                    <p>Captura tus momentos <br>para que siempre te acompañen</p>
+                </div>
+                <div>
+                    <i class="bi bi-image"></i>
+                    <h4><b>Edición de imágenes</b></h4>
+                    <p>Haré que tus fotos <br>se vean aún mejor</p>
+                </div>
+                <div>
+                    <i class="bi bi-mic"></i>
+                    <h4><b>Grabación de sonido</b></h4>
+                    <p>Sólo un sonido de gran calidad <br>ayudará a mejorar tus vídeos</p>
+                </div>
+            </div>
+    </div>
+
+</section>
+
+<!-- --------------PRUEBA--------------------- -->
+<!-- <section class="prueba">
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('paisajes')">PAISAJES</p>
+        <p class="tab-links" onclick="opentab('retratos')">RETRATOS</p>
+        <p class="tab-links" onclick="opentab('eventos')">EVENTOS</p>
+    </div>
+
+    <div class="contenido-prueba active-tab" id="paisajes">
+        <img src="fotos/landscapes/1 x 1/2.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-2.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-3.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-5.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-4.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-6.JPG" alt="">
+    </div>
+
+    <div class="contenido-prueba" id="retratos">
+        <img src="fotos/portraits/retrato_1.jpg" alt="">
+        <img src="fotos/portraits/retrato_2.jpg" alt="">
+        <img src="fotos/portraits/retrato_3.jpg" alt="">
+        <img src="fotos/portraits/retrato_4.jpg" alt="">
+        <img src="fotos/portraits/retrato_5.jpg" alt="">
+        <img src="fotos/portraits/retrato_6.jpg" alt="">
+        
+    <div class="contenido-prueba active-tab" id="eventos">
+        <img src="fotos/landscapes/1 x 1/2.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-2.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-3.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-5.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-4.JPG" alt="">
+        <img src="fotos/landscapes/1 x 1/2-6.JPG" alt="">
+    </div>
+    </div>
+</section> -->
+
+
+<!-- --------------PRUEBA--------------------- -->
+
+
+
+<section class="portfolio" id="portfolio">
+    <!-- <div class="full-img" id="full-img-box">
+        <img src="fotos/landscapes/1 x 1/2.JPG" alt="">
+        <span onclick="closImg()">X</span>
+    </div> -->
+
+        <div class="portfolio-grupo">
+            <div class="encabezado-portfolio">
+                <h3>PORTFOLIO</h3>
+            <div class="contenedor-navbar">
+                <nav class="navbar">
+                    <a href="#portfolio" class="tab-links active-link">PAISAJES</a>
+                    <a href="#about" class="tab-links">RETRATOS</a>
+                    <a href="#video" class="tab-links">EVENTOS</a>
+                </nav>
+            </div>
+        </div>
+    
+        <hr>
+        <div class="contenedor-portfolio">
+                <img src="fotos/landscapes/1 x 1/2.JPG" alt="">
+                <img src="fotos/landscapes/1 x 1/2-2.JPG" alt="">
+                <img src="fotos/landscapes/1 x 1/2-3.JPG" alt="">
+                <img src="fotos/landscapes/1 x 1/2-5.JPG" alt="">
+                <img src="fotos/landscapes/1 x 1/2-4.JPG" alt="">
+                <img src="fotos/landscapes/1 x 1/2-6.JPG" alt="">
+        </div>
+
+        <div class="portfolio-completo">
+            <p>VER PORTFOLIO COMPLETO</p>
+        </div>
+    </div>
+</section>
+
+
+    <section class="aboutme" id="aboutme"> 
+        <div class="aboutme-contenedor">
+            <div class="columnas">
+                <div class="aboutme-contenedor-izq">
+                    <img src="fotos/about me/aboutme.jpg2" alt="">
+                </div>
+                <div class="aboutme-contenedor-der">
+                    <h3>SOBRE MI</h3>
+                    <hr>
+                    <br>
+                    <h4>EXPLORANDO EMOCIONES A TRAVÉS DEL DISEÑO AUDIOVISUAL</h4>
+                    <p>Hola, mi nombre es Nicolás, tengo 23 años y soy estudiante de Diseño de Imagen y Sonido de la Universidad de Buenos Aires. Mi pasión por capturar momentos instantaneos me ha llevado a explorar el mundo a través del lente de mi cámara. Me encanta inmortalizar momentos espontáneos y plasmar emociones genuinas en cada fotografía que tomo. Estoy emocionado por continuar mi viaje explorando formas innovadoras de contar historias a través de la realización audiovisual. </p>
+                    <div class="redes-sobremi">
+                        <i class="bi bi-behance"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+    </section>
+
+    
+
+
+
+    <section class="video-presentacion" id="video-presentacion">
+        <h3>VIDEO PRESENTACIÓN</h3>
+        <hr>
+        <div class="video-container">
+            <video controls>
+                <source class="video" src="video_1mp4.mp4" type="video/mp4">
+            </video>
+            <button class="play-button"></button>
+        </div>
+    </section>
+
+
+
+    
+
+    <section class="formulario" id="formulario">
+        <div class="encabezado-formulario">
+            <h3>CONTACTO</h3>
+            <hr>
+        </div>
+        <div class="todo-formulario">
+            <div class="formulario-fondo">
+                <div class="contenedor-formulario">
+                    <form class="form">
+                        <h4 class="form-titulo">ESCRIBIME</h4>
+                        
+                        <div class="form-contenedor">
+        
+                            <div class="form-grupo">
+                                <input type="text" id="nombre" class="form_input" placeholder=" ">
+                                <label for="nombre" class="form-label">nombre</label>
+                                <span class="form_line"></span>
+                            </div>
+                            <div class="form-grupo">
+                                <input type="email" id="email" class="form_input" placeholder=" ">
+                                <label for="email" class="form-label">email</label>
+                                <span class="form_line"></span>
+                            </div>
+                            <div class="form-grupo">
+                                <input type="text" id="mensaje" class="form_input" placeholder=" ">
+                                <label for="mensaje" class="form-label">mensaje</label>
+                                <span class="form_line"></span>
+                            </div>
+                            <input type="submit" class="form-enviar" value="Enviar">
+                        </div>
+                    </form>
+                </div>    
+                
+                <div class="detalles-contacto">
+                    <p>+54 11 7272 6868</p>
+                    <h5>nicolasernestobaigorri.717a@fadu.uba.ar</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p> © 2023 Nicolás Baigorri</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
