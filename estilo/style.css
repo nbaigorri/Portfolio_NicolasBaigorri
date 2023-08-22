@@ -271,15 +271,15 @@ section[id] {
     height: 10%;
 }
 
-.redes i {
-    font-size: 18px;
+.redes a {
+    font-size: 20px;
     margin-top: 10px;
     color: #4f4f4f;
     transition: .2s;
 }
 
-.redes i:hover,
-.redes i:active {
+.redes a:hover,
+.redes a:active {
     color: var(--main-color);
     cursor: pointer;
 }
