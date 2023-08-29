@@ -72,7 +72,7 @@ section[id] {
     font-family: 'Montserrat';
     color: #4f4f4f;
     font-size: 50px;
-    font-weight: lighter;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -427,6 +427,7 @@ section[id] {
     padding: 0px 60px;
     color: #4f4f4f;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .contenedor-servicios div i {
@@ -512,6 +513,7 @@ section[id] {
     font-size: 45px;
     font-family: 'Montserrat';
     color: #4f4f4f;
+    font-weight: lighter;
 }
 
 .portfolio hr {
@@ -533,16 +535,19 @@ section[id] {
 
 .contenedor-portfolio img{
     width: 100%;
-    height: 260px;
+    height: 285px;
     transition: .3s;
     position: relative;
     box-shadow: 0 2px 2px 0 rgb(159, 159, 159);
 }
 
-.contenedor-portfolio img:hover {
-    transform: scale(1.03);
+/* .contenedor-portfolio img:hover {
+    transform: scale(1.02);
     cursor: pointer;
-}
+    overflow: hidden;
+} */
+
+
 
 
 .full-img img {
@@ -564,17 +569,125 @@ section[id] {
     justify-content: center;
 }
 
-.portfolio-completo p {
+.portfolio-completo a {
     font-family: 'Bebas Neue';
     color: #4f4f4f;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
+    text-decoration: none;
+    transition: .2s;
 }
 
-.portfolio-completo p:hover {
+.portfolio-completo a:hover {
     color: #0CADD3;
     cursor: pointer;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    /* scroll-behavior: smooth; */
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup{
+    margin: 150px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: #4f4f4f;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 25px;
+    justify-content: center;
+    margin-left: 40%;
+}
+
+.grid-wrapper {
+    /* display: flex; */
+}
+
+.grid-wrapper img{
+    max-width: 70%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.popup .close:hover{
+    color: #0CADD3;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px)
+{
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+
+
+
+
+
 
 
 
@@ -613,6 +726,8 @@ section[id] {
 
 .aboutme-contenedor-der h3 {
     font-size: 45px;
+    font-weight: lighter;
+
 }
 
 .aboutme-contenedor-der hr {
@@ -675,6 +790,7 @@ section[id] {
     font-size: 45px;
     font-family: 'Montserrat';
     color: #4f4f4f;
+    font-weight: lighter;
 }
 
 .video-presentacion hr {
@@ -689,7 +805,7 @@ section[id] {
 
 .video-presentacion video {
     width: 100%;
-    height: 570px;
+    height: px;
     display: block;
 }
 
@@ -738,6 +854,8 @@ section[id] {
 .formulario h3 {
     font-size: 45px;
     margin-left: 50%;
+    font-weight: lighter;
+
 }
 
 .form {
@@ -893,5 +1011,49 @@ section[id] {
     font-family: 'Montserrat';
     color: white;
 }
+
+
+/* ----------------------------PRUEBA PORTFOLIO---------------- */
+
+/* .prueba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+}
+
+.wrapper .galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.galeria .image{
+    padding: 2px;
+    width: calc(100% / 3);
+}
+
+.galeria .image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.galeria .image:hover img {
+    transform: scale(1.03);
+    cursor: pointer;
+} */
+ */
 
 
